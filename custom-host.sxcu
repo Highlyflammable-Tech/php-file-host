@@ -1,0 +1,13 @@
+{
+  "Version": "13.0.1",
+  "Name": "Custom image hoster",
+  "DestinationType": "ImageUploader, FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "url_goes_here/index.php",
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "secret": "token_goes_here"
+  },
+  "FileFormName": "sharex",
+  "URL": "url_goes_here/?f=$json:url$"
+}
