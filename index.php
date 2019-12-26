@@ -67,8 +67,8 @@ else
     }
     elseif ($file === NULL)
     {
-        //Warning if no uploaded data or file not found
-        echo '<strong>Hello if you wish to have access to this please dm ♛ ᖴᒪᗩᙏᙏᗩᙖᒪᙓᗩSSᗩSSIᑎ® ♛#4701 on discord</strong><br>It is unlikely you will have access';
+        //Warning if no uploaded data.
+        echo 'Error message';
     }
     else
     {
