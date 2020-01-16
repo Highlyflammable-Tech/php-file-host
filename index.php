@@ -68,7 +68,7 @@ else
     elseif ($file === NULL)
     {
         //Warning if no uploaded data.
-        echo 'Error message';
+        echo 'File not found';
     }
     else
     {
