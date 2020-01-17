@@ -10,7 +10,6 @@ https://files.highlyflammable.tech/
 2. Edit index.php:
    * Adding in your own tokens
    * Editing your response when a file isn't found or on the homepage
-   * Adding your own image for image not found _this can be a message as well_
 3. Upload to your host
 4. Create a folder called `i`
 5. Change `i` Chmod to be 770
