@@ -2,7 +2,7 @@
 A php file host which can be used with sharex
 Based on https://github.com/Inteliboi/ShareX-Custom-Upload
 
-Where mine is being hosted:
+Example of where it is being hosted:
 https://files.highlyflammable.tech/
 
 # Setup
