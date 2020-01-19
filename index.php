@@ -1,8 +1,9 @@
 <?php
 error_reporting(E_ERROR);
 
-$tokens = array("token1_here",
-"token2_here");
+$tokens = array(
+    "keys_here"
+);
 $sharexdir = "i/"; //File directory
 $lengthofstring = 5; //Length of file name
 //Random file name generation
@@ -41,7 +42,7 @@ if (isset($_POST['secret']))
         else
         {
             //Warning
-            echo 'File upload failed - CHMOD/Folder doesn\'t exist?';
+            echo 'File upload failed!';
         }
     }
     else
@@ -53,6 +54,7 @@ if (isset($_POST['secret']))
 else
 {
     $file = $_GET['f'];
+    $file_extension = explode(".", $file) [1];
     $array_files = scandir(getcwd() . "/i");
     $array_files = array_diff($array_files, [".", ".."]);
     if (in_array($file, $array_files))
@@ -60,20 +62,24 @@ else
         //sending file//
         $send_file = file_get_contents(getcwd() . "/i/" . $file);
         $size = filesize(getcwd() . "/i/" . $file);
-        header("Content-Type: image/png");
+        if ($file_extension === "png" || $file_extension === "jpeg" || $file_extension === "jpg" || $file_extension === "gif") header("Content-Type: image/$file_extension");
+        elseif ($file_extension !== "txt")
+        {
+            header("Content-Type: application/$file_extension");
+            header("Content-disposition: attachment; filename=\"$file\"");
+        }
         header("Content-length: $size");
         echo $send_file;
 
     }
     elseif ($file === NULL)
     {
-        //Warning if no uploaded data.
-        die('This is a php file host');
+        //Warning if no uploaded data or file not found
+        echo 'This is a php file host!';
     }
     else
     {
-        die('File not found');
+        die("File not found!");
     }
 }
-
 ?>
