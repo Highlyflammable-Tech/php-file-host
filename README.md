@@ -1,4 +1,4 @@
-# php-file-host
+# Php-file-host
 A php file host which can be used with sharex
 Based on https://github.com/Inteliboi/ShareX-Custom-Upload
 
@@ -18,3 +18,7 @@ https://files.highlyflammable.tech/
 # Support
 If you need support please join the [code::together discord server](https://together.codes/discord).
 Then please ping me ♛ ᖴᒪᗩᙏᙏᗩᙖᒪᙓᗩSSᗩSSIᑎ® ♛#4701 in the php channel!
+
+# Things that need to be done
+- [ ] Add SQL database support
+- [ ] Add file name checking
