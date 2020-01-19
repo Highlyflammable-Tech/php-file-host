@@ -68,15 +68,11 @@ else
     elseif ($file === NULL)
     {
         //Warning if no uploaded data.
-        echo 'File not found';
+        die('This is a php file host');
     }
     else
     {
-        $send_file = file_get_contents(getcwd() . "/i/missing.png");
-        $size = filesize(getcwd() . "/i/missing.png");
-        header("Content-Type: image/png");
-        header("Content-length: $size");
-        echo $send_file;
+        die('File not found');
     }
 }
 
