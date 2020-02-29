@@ -22,3 +22,6 @@ Then please ping me ♛ ᖴᒪᗩᙏᙏᗩᙖᒪᙓᗩSSᗩSSIᑎ® ♛#4701 in 
 # Things that need to be done
 - [ ] Add SQL database support
 - [ ] Add file name checking
+
+# Ideas
+ - Password protect a file
