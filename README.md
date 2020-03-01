@@ -22,6 +22,8 @@ Then please ping me ♛ ᖴᒪᗩᙏᙏᗩᙖᒪᙓᗩSSᗩSSIᑎ® ♛#4701 in 
 # Things that need to be done
 - [ ] Add SQL database support
 - [ ] Add file name checking
+- [ ] A Sharex custom uploader file generator for either clipboard or file download
+- [ ] Get a list of viewable files
 
 # Ideas
  - Password protect a file
