@@ -8,12 +8,15 @@ https://files.highlyflammable.tech/
 # Setup
 1. Clone
 2. Edit index.php:
-   * Adding in your own tokens
+   * Adding in your own sql database info
    * Editing your response when a file isn't found or on the homepage
 3. Upload to your host
 4. Create a folder called `i`
 5. Change `i` Chmod to be 770
 6. Copy example.sxcu into sharex and edit to have you domain and tokens in
+
+# The Database
+  I will create a Database setup file soon but for now it only needs a table called `TOKENS` and a coloum called `TOKEN`
 
 # Support
 If you need support please join the [code::together discord server](https://together.codes/discord).
