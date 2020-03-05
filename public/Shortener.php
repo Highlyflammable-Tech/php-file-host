@@ -39,7 +39,7 @@ if (isset($_POST['secret']))
     $stmt2 = $conn->prepare("INSERT INTO URLS (URL,ID,OWNER)VALUES (?,?,?)");
     $stmt2->bind_param('sss', $_POST["url"], $id,$user["OWNER"]);
     $stmt2->execute();
-    die("https://domain.here/?w=" . $id);
+    die("https://".$_SERVER['SERVER_NAME']."/?w=" . $id);
 }
 else
 {
