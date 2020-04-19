@@ -45,7 +45,7 @@ else
 {
     if (!isset($_GET["w"]) || $_GET["w"] === "")
     {
-        header("Location: https://github.com/Highlyflammable-Tech/goose-bot");
+        header("Location: https://github.com/Highlyflammable-Tech/php-file-host");
         exit();
     }
     else
